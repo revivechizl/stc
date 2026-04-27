@@ -1,8 +1,8 @@
 @echo off
-title REVIVECHIZL Local API Server
+title REVIVECHIZL Local Static Server
 
 echo ==========================================
-echo   REVIVECHIZL - LOCAL API SERVER
+echo   REVIVECHIZL - LOCAL STATIC SERVER
 echo ==========================================
 echo.
 
@@ -19,8 +19,7 @@ IF NOT EXIST node_modules (
 )
 
 echo.
-echo Starting Node server at http://localhost:3000
-echo API endpoint: http://localhost:3000/api/latest-video
+echo Starting site at http://localhost:3000
 echo Press CTRL+C to stop the server.
 echo.
 

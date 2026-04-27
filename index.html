@@ -52,39 +52,40 @@
     <section class="hero section-pad">
       <div class="hero-copy">
         <h1>REVIVECHIZL<span>™</span></h1>
-
-        <div class="bio-row">
-          <img class="artist-portrait" src="assets/releases/portrait.png" alt="REVIVECHIZL portrait" />
-          <p id="artistBio">
-            REVIVECHIZL™ is a Birmingham, United Kingdom artist creating dark, minimal, emotionally direct music, shaped by underground energy, raw visuals, and cinematic release concepts. Founder of the REVIVE THA RAGE event series.
-          </p>
-        </div>
-
-        <div class="icon-row">
-          <a data-link="spotifyUrl" class="platform spotify"></a>
-          <a data-link="appleUrl" class="platform apple"></a>
-          <a data-link="youtubeUrl" class="platform youtube"></a>
-          <a data-link="soundcloudUrl" class="platform soundcloud"></a>
-          <a data-link="instagramUrl" class="platform instagram"></a>
-        </div>
-
-        <a id="ticketsButton"
-           class="ticket-btn"
-           href="https://events.bookitbee.com/ukundergroundnetwork/ukundergroundnetwork-presents-private-members-club/"
-           target="_blank" rel="noopener">
-          GET TICKETS
-        </a>
+        <p class="next-up">NEXT UP: SAVE MY SOUL (PROJECT)</p>
       </div>
 
-      <div class="video-frame" id="latestVideo">
-        <a class="video-fallback"
-           href="https://www.youtube.com/@ReviveChizl"
-           target="_blank" rel="noopener">
-          <span class="video-title">REVIVECHIZL™ — LATEST VIDEO</span>
-          <span class="play-button">▶</span>
-          <span class="watch-copy">WATCH ON YOUTUBE</span>
-        </a>
+      <section class="video-section" aria-labelledby="latestVideoTitle">
+        <p class="video-brand">REVIVECHIZL</p>
+        <p class="video-next">NEXT UP: SAVE MY SOUL (PROJECT)</p>
+        <h2 id="latestVideoTitle" class="latest-video-heading">LATEST RELEASE: DEATHWISH</h2>
+        <div class="video-frame" id="latestVideo">
+          <a class="video-fallback"
+             href="https://www.youtube.com/@ReviveChizl"
+             target="_blank" rel="noopener">
+            <span class="video-title">REVIVECHIZL™ — LATEST VIDEO</span>
+            <span class="play-button">▶</span>
+            <span class="watch-copy">WATCH ON YOUTUBE</span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section class="links-section section-pad" aria-label="REVIVECHIZL links">
+      <div class="icon-row">
+        <a data-link="spotifyUrl" class="platform spotify" aria-label="Spotify"></a>
+        <a data-link="appleUrl" class="platform apple" aria-label="Apple Music"></a>
+        <a data-link="youtubeUrl" class="platform youtube" aria-label="YouTube"></a>
+        <a data-link="soundcloudUrl" class="platform soundcloud" aria-label="SoundCloud"></a>
+        <a data-link="instagramUrl" class="platform instagram" aria-label="Instagram"></a>
       </div>
+
+      <a id="ticketsButton"
+         class="ticket-btn"
+         href="https://events.bookitbee.com/ukundergroundnetwork/ukundergroundnetwork-presents-private-members-club/"
+         target="_blank" rel="noopener">
+        GET TICKETS
+      </a>
     </section>
 
     <section class="listen section-pad">
@@ -103,29 +104,6 @@
       <span>ALL RIGHTS RESERVED.</span>
     </footer>
   </main>
-
-  <audio id="entryAudio" src="assets/song.mp3" preload="auto" loop></audio>
-
-  <div class="now-playing is-hidden" id="nowPlaying">
-    <button id="audioToggle">▮▮</button>
-    <div>
-      <span>NOW PLAYING</span>
-      <strong>DEATHWISH</strong>
-      <em>REVIVECHIZL</em>
-    </div>
-  </div>
-
-  <!-- STYLISED PROMPT -->
-  <div class="sound-modal" id="soundModal">
-    <div class="sound-modal__panel">
-      <h2>INCOMING TRANSMISSION: DEATHWISH</h2>
-      <p>PLAY SONG — YES / NO</p>
-      <div class="sound-modal__actions">
-        <button id="soundYes">YES</button>
-        <button id="soundNo">NO</button>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js" type="module"></script>
 
