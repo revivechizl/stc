@@ -1,0 +1,8 @@
+# Edit simple site values here. Do not put the YouTube API key in this public file.
+ticketsUrl=https://placeholder.com
+instagramUrl=https://instagram.com/REVIVECHIZL
+spotifyUrl=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+appleUrl=https://music.apple.com/gb/artist/revivechizl/
+youtubeUrl=https://www.youtube.com/@ReviveChizl
+soundcloudUrl=https://soundcloud.com/ReviveChizl
+bio=REVIVECHIZL™ is a Birmingham, United Kingdom artist creating dark, minimal, emotionally direct music, shaped by underground energy, raw visuals, and cinematic release concepts. Founder of the REVIVE THA RAGE event series.

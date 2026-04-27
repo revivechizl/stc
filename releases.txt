@@ -1,0 +1,59 @@
+[release_005]
+arc=THE REBIRTH ARC
+date=2026-06-01
+title=REBIRTH
+type=ALBUM
+cover=/assets/releases/005-rebirth.png
+description=A new chapter. The emergence of a cleaner self from the ashes.
+spotify=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+apple=https://music.apple.com/gb/artist/revivechizl/
+soundcloud=https://soundcloud.com/ReviveChizl
+youtube=https://www.youtube.com/@ReviveChizl
+
+[release_004]
+arc=THE REBIRTH ARC
+date=2026-02-14
+title=REBIRTH EP
+type=EP
+cover=/assets/releases/004-rebirth-ep.png
+description=A short offering before the full transformation.
+spotify=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+apple=https://music.apple.com/gb/artist/revivechizl/
+soundcloud=https://soundcloud.com/ReviveChizl
+youtube=https://www.youtube.com/@ReviveChizl
+
+[release_003]
+arc=THE CRIMSON ARC
+date=2024-09-20
+title=CRIMSON
+type=PROJECT
+cover=/assets/releases/003-crimson.png
+description=Blood, memory, and the weight of becoming.
+spotify=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+apple=https://music.apple.com/gb/artist/revivechizl/
+soundcloud=https://soundcloud.com/ReviveChizl
+youtube=https://www.youtube.com/@ReviveChizl
+
+[release_002]
+arc=THE CRIMSON ARC
+date=2023-05-05
+title=DEEPER
+type=EP
+cover=/assets/releases/002-deeper.png
+description=Descending further into the underground.
+spotify=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+apple=https://music.apple.com/gb/artist/revivechizl/
+soundcloud=https://soundcloud.com/ReviveChizl
+youtube=https://www.youtube.com/@ReviveChizl
+
+[release_001]
+arc=THE CRIMSON ARC
+date=2022-11-11
+title=ECHOES
+type=SINGLE
+cover=/assets/releases/001-echoes.png
+description=A lone signal in a world of static.
+spotify=https://open.spotify.com/artist/4u9eiYZ4gxfGc4VYd2DsfD
+apple=https://music.apple.com/gb/artist/revivechizl/
+soundcloud=https://soundcloud.com/ReviveChizl
+youtube=https://www.youtube.com/@ReviveChizl

@@ -1,0 +1,366 @@
+/*
+ * Custom override stylesheet for the REVIVECHIZL site.
+ *
+ * These rules simplify the design to strictly use solid black and red colours.
+ * Background patterns, gradients and blurs have been removed. The intro
+ * screen now fades out cleanly without blurring the artwork. The large
+ * letter "R" on the intro screen is rendered with a solid red fill
+ * instead of a gradient or drop-shadow.
+ */
+
+/* Remove the patterned overlays from the page. */
+.grunge-layer,
+body:before,
+body:after {
+  background: none !important;
+  opacity: 1 !important;
+}
+
+/* Ensure the site shell uses a plain black background instead of a radial gradient. */
+.site-shell {
+  background: #000 !important;
+}
+
+/* Simplify the video frame to have a solid black background with a red border. */
+.video-frame {
+  background: #000 !important;
+  border: 1px solid var(--red) !important;
+}
+
+/* Render the intro 'R' as a clean, solid red character. Remove gradients, drop shadows and filters. */
+.intro-r {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  color: var(--red) !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* Remove the blur effect during the intro exit transition to make the fade smoother. */
+.intro-screen.exiting {
+  filter: none !important;
+}
+.video-error {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 24px;
+  color: var(--red);
+  background: #000;
+  border: 1px solid var(--red);
+  text-align: center;
+  letter-spacing: .08em;
+}
+
+.video-error span,
+.video-error small {
+  display: block;
+  max-width: 90%;
+  letter-spacing: 0;
+}
+
+/* Final red/interaction updates */
+:root {
+  --red: #ff0000;
+  --red2: #b00000;
+  --muted: #7a0000;
+}
+
+#embers { display: none !important; }
+
+.enter-text,
+.enter-line,
+.platform,
+.platform:hover,
+.listen-card:hover .platform,
+.ticket-btn:hover,
+.listen-card:hover,
+.release:after,
+.top-logo {
+  text-shadow: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.enter-line { box-shadow: none !important; }
+
+.logo-r {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--red);
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.logo-r:hover { transform: scale(1.04); }
+
+.bio-row {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  max-width: 620px;
+  margin-bottom: 34px;
+}
+
+.artist-portrait {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border: 1.5px solid var(--red);
+  background: #000;
+}
+
+.bio-row p {
+  margin: 0 !important;
+  max-width: 420px;
+}
+
+.sound-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, .88);
+}
+
+.sound-modal.is-hidden { display: none; }
+
+.sound-modal__panel {
+  width: min(520px, 100%);
+  border: 2px solid var(--red);
+  background: #000;
+  color: var(--red);
+  padding: 34px;
+  text-align: center;
+}
+
+.sound-modal__panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  letter-spacing: .08em;
+}
+
+.sound-modal__panel p {
+  margin: 0 0 28px;
+  color: var(--red);
+  letter-spacing: 0;
+}
+
+.sound-modal__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.sound-modal__actions button {
+  min-width: 120px;
+  padding: 12px 18px;
+  border: 2px solid var(--red);
+  background: #000;
+  color: var(--red);
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: .22em;
+  cursor: pointer;
+}
+
+.sound-modal__actions button:hover {
+  background: var(--red);
+  color: #000;
+}
+
+@media(max-width: 560px) {
+  .bio-row {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-portrait {
+    width: 135px;
+    height: 170px;
+  }
+}
+
+
+/* Prompt-first entry flow */
+.prompt-gated {
+  display: none !important;
+}
+
+.sound-modal {
+  z-index: 100 !important;
+}
+
+.sound-modal__panel {
+  box-shadow: none !important;
+}
+
+.now-playing {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 245px;
+  border: 1.5px solid var(--red);
+  background: #000;
+  color: var(--red);
+  padding: 12px 14px;
+  letter-spacing: .12em;
+}
+
+.now-playing.is-hidden {
+  display: none !important;
+}
+
+.now-playing__toggle {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--red);
+  background: #000;
+  color: var(--red);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.now-playing__toggle:hover {
+  background: var(--red);
+  color: #000;
+}
+
+.now-playing__copy {
+  display: grid;
+  gap: 2px;
+}
+
+.now-playing__copy span {
+  font-size: .72rem;
+  opacity: .78;
+}
+
+.now-playing__copy strong {
+  font-size: 1rem;
+  letter-spacing: .18em;
+}
+
+.now-playing__copy em {
+  font-size: .82rem;
+  font-style: normal;
+  letter-spacing: .12em;
+}
+
+.now-playing.needs-audio-file:after {
+  content: "ADD assets/song.mp3";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -24px;
+  font-size: .65rem;
+  color: var(--red);
+  letter-spacing: .08em;
+}
+
+.video-fallback {
+  cursor: pointer;
+}
+
+.video-frame iframe {
+  display: none !important;
+}
+
+@media(max-width: 560px) {
+  .now-playing {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    min-width: 0;
+  }
+}
+
+/* Transmission prompt polish */
+.sound-modal__panel {
+  position: relative;
+  overflow: hidden;
+  border-width: 1.5px;
+  padding: 38px 34px 34px;
+  text-transform: uppercase;
+}
+
+.sound-modal__panel:before,
+.sound-modal__panel:after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  background: var(--red);
+  opacity: .9;
+}
+
+.sound-modal__panel:before { top: 16px; }
+.sound-modal__panel:after { bottom: 16px; }
+
+.sound-modal__panel h2 {
+  font-size: clamp(1.35rem, 5vw, 2.15rem);
+  letter-spacing: .16em;
+  line-height: 1.08;
+}
+
+.sound-modal__panel p {
+  display: inline-block;
+  margin-bottom: 26px;
+  padding: 6px 14px;
+  border: 1px solid var(--red);
+  font-weight: 700;
+  letter-spacing: .34em;
+}
+
+/* Restore actual latest-video imagery instead of text-only fallback */
+.video-frame {
+  position: relative;
+  overflow: hidden;
+  background: #000 url('assets/video-fallback.svg') center/cover no-repeat !important;
+}
+
+.video-fallback.has-thumb {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.video-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: .9;
+}
+
+.video-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68));
+}
+
+.video-title,
+.play-button,
+.watch-copy {
+  z-index: 2;
+}

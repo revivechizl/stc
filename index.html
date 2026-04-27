@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>REVIVECHIZL — Official Artist Website</title>
+  <meta name="description" content="REVIVECHIZL official artist website" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="REVIVECHIZL — Official Artist Website">
+  <meta property="og:description" content="REVIVECHIZL official artist website">
+  <meta property="og:image" content="https://revivechizl.co.uk/favicon.png">
+  <meta property="og:url" content="https://revivechizl.co.uk">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="REVIVECHIZL — Official Artist Website">
+  <meta name="twitter:description" content="REVIVECHIZL official artist website">
+  <meta name="twitter:image" content="https://revivechizl.co.uk/favicon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+
+  <section id="intro" class="intro-screen prompt-gated">
+    <div class="grunge-layer"></div>
+    <button class="enter-wrap" id="enterSite" aria-label="Enter REVIVECHIZL website">
+      <span class="intro-r">R</span>
+      <span class="enter-text">ENTER</span>
+      <span class="enter-line"></span>
+    </button>
+    <footer class="intro-footer">
+      <span>© 2026 REVIVECHIZL™</span>
+      <span>ALL RIGHTS RESERVED.</span>
+    </footer>
+  </section>
+
+  <main id="site" class="site-shell is-hidden">
+    <div class="top-logo logo-r" aria-label="REVIVECHIZL logo">R</div>
+
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <h1>REVIVECHIZL<span>™</span></h1>
+
+        <div class="bio-row">
+          <img class="artist-portrait" src="assets/releases/portrait.png" alt="REVIVECHIZL portrait" />
+          <p id="artistBio">
+            REVIVECHIZL™ is a Birmingham, United Kingdom artist creating dark, minimal, emotionally direct music, shaped by underground energy, raw visuals, and cinematic release concepts. Founder of the REVIVE THA RAGE event series.
+          </p>
+        </div>
+
+        <div class="icon-row">
+          <a data-link="spotifyUrl" class="platform spotify"></a>
+          <a data-link="appleUrl" class="platform apple"></a>
+          <a data-link="youtubeUrl" class="platform youtube"></a>
+          <a data-link="soundcloudUrl" class="platform soundcloud"></a>
+          <a data-link="instagramUrl" class="platform instagram"></a>
+        </div>
+
+        <a id="ticketsButton"
+           class="ticket-btn"
+           href="https://events.bookitbee.com/ukundergroundnetwork/ukundergroundnetwork-presents-private-members-club/"
+           target="_blank" rel="noopener">
+          GET TICKETS
+        </a>
+      </div>
+
+      <div class="video-frame" id="latestVideo">
+        <a class="video-fallback"
+           href="https://www.youtube.com/@ReviveChizl"
+           target="_blank" rel="noopener">
+          <span class="video-title">REVIVECHIZL™ — LATEST VIDEO</span>
+          <span class="play-button">▶</span>
+          <span class="watch-copy">WATCH ON YOUTUBE</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="listen section-pad">
+      <h2>LISTEN</h2>
+      <div class="listen-grid">
+        <a data-link="spotifyUrl" class="listen-card"><span class="platform spotify"></span><strong>SPOTIFY</strong></a>
+        <a data-link="appleUrl" class="listen-card"><span class="platform apple"></span><strong>APPLE MUSIC</strong></a>
+        <a data-link="youtubeUrl" class="listen-card"><span class="platform youtube"></span><strong>YOUTUBE</strong></a>
+        <a data-link="soundcloudUrl" class="listen-card"><span class="platform soundcloud"></span><strong>SOUNDCLOUD</strong></a>
+        <a data-link="instagramUrl" class="listen-card"><span class="platform instagram"></span><strong>INSTAGRAM</strong></a>
+      </div>
+    </section>
+
+    <footer class="site-footer section-pad">
+      <span>© 2026 REVIVECHIZL™</span>
+      <span>ALL RIGHTS RESERVED.</span>
+    </footer>
+  </main>
+
+  <audio id="entryAudio" src="assets/song.mp3" preload="auto" loop></audio>
+
+  <div class="now-playing is-hidden" id="nowPlaying">
+    <button id="audioToggle">▮▮</button>
+    <div>
+      <span>NOW PLAYING</span>
+      <strong>DEATHWISH</strong>
+      <em>REVIVECHIZL</em>
+    </div>
+  </div>
+
+  <!-- STYLISED PROMPT -->
+  <div class="sound-modal" id="soundModal">
+    <div class="sound-modal__panel">
+      <h2>INCOMING TRANSMISSION: DEATHWISH</h2>
+      <p>PLAY SONG — YES / NO</p>
+      <div class="sound-modal__actions">
+        <button id="soundYes">YES</button>
+        <button id="soundNo">NO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+
+</body>
+</html>
